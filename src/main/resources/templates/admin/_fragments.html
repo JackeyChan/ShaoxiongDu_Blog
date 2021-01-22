@@ -54,14 +54,10 @@
       </div>
       <!--推荐博客-->
       <div class="three wide column" >
-        <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
+        <h4 class="ui inverted header me-opacity-mini" >最新博客</h4>
         <div id="newblog-container">
           <div class="ui inverted link list" th:fragment="newblogList">
             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
-            <!--/*-->
-            <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-            <a href="#" class="item m-text-thin">用户故事（User Story）</a>
-            <!--*/-->
           </div>
         </div>
       </div>
@@ -81,7 +77,7 @@
         <p class="ui me-opacity-mini">每个人都有属于自己的一片森林</p>
         <p class="ui me-opacity-mini">也许我们 从来不曾去过，</p>
         <p class="ui me-opacity-mini">但它一直在那里，总会在那里。</p>
-      </div>>
+      </div>
     </div>
     <div class="ui inverted section divider"></div>
     <!--版权说明-->

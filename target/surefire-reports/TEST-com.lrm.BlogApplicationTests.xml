@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lrm.BlogApplicationTests" time="0.031" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.lrm.BlogApplicationTests" time="0.033" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\JavaJDK\jre\bin"/>
     <property name="java.vm.version" value="25.281-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ShaoxiongDu\Desktop\blog"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ShaoxiongDu\OneDrive\Development\blog"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\ShaoxiongDu\Desktop\blog"/>
+    <property name="user.dir" value="C:\Users\ShaoxiongDu\OneDrive\Development\blog"/>
     <property name="java.runtime.version" value="1.8.0_281-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\JavaJDK\jre\lib\endorsed"/>
@@ -64,5 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="contextLoads" classname="com.lrm.BlogApplicationTests" time="0.031"/>
+  <testcase name="contextLoads" classname="com.lrm.BlogApplicationTests" time="0.033"/>
 </testsuite>
