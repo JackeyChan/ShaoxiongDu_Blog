@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://shaoxiongdu.mysql.rds.aliyuncs.com:3306/blog?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: DSXdsx05117218
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: error
+    com.lrm: error
+  file: log/blog-dev.log
+
+
+
