@@ -22,6 +22,11 @@ public class CommentServiceImpl implements CommentService {
     private CommentRepository commentRepository;
 
     @Override
+    public void deleteCommentByBlogId(Long blogId) {
+        commentRepository.deleteByBlogId(blogId);
+    }
+
+    @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
         Sort sort = new Sort("createTime");
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId,sort);
