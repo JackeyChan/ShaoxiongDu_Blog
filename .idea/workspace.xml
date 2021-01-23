@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="项目部署完成">
+    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="修复支付宝打赏功能,完善页面体验">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/29276c93-2a88-4aa9-9354-e7669522daba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/29276c93-2a88-4aa9-9354-e7669522daba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/zhiFuBaoPay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhiFuBaoPay.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/util/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/util/MD5Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/zhiFuBaoPay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/zhiFuBaoPay.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lrm.BlogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lrm.BlogApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.lrm.BlogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.lrm.BlogApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +91,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -726,6 +729,9 @@
       <workItem from="1611316426091" duration="90000" />
       <workItem from="1611316571264" duration="2798000" />
       <workItem from="1611330410676" duration="1310000" />
+      <workItem from="1611331839041" duration="392000" />
+      <workItem from="1611409069475" duration="782000" />
+      <workItem from="1611410584037" duration="2206000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
@@ -734,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611319493545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修复支付宝打赏功能,完善页面体验">
+      <created>1611331885867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611331885867</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -873,7 +886,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目部署完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目部署完成" />
+    <MESSAGE value="修复支付宝打赏功能,完善页面体验" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复支付宝打赏功能,完善页面体验" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -3,7 +3,7 @@
 <head th:fragment="head(title)">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title th:replace="${title}">博客详情</title>
+  <title th:replace="${title}"></title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
   <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
   <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
@@ -18,16 +18,16 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <h2 class="ui teal header item">Blog</h2>
-      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
-      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类</a>
-      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签</a>
-      <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" calendar icon"></i>时间线</a>
+      <h2 class="ui teal header item">杜少雄的个人博客</h2>
+      <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客首页</a>
+      <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>博客分类</a>
+      <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>博客标签</a>
+      <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class=" calendar icon"></i>博客归档</a>
       <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class=" user icon"></i>关于作者</a>
       <div class="right m-item item m-mobile-hide">
         <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
           <div class="ui icon inverted transparent input m-margin-tb-tiny">
-            <input type="text" name="query" placeholder="Search...." th:value="${query}">
+            <input type="text" name="query" placeholder="搜索博客...." th:value="${query}">
             <i onclick="document.forms['search'].submit()" class="search link icon"></i>
           </div>
         </form>
@@ -47,7 +47,7 @@
     <div class="ui inverted divided stackable grid">
 
       <!--微信二维码-->
-      <div class="three wide column">
+      <div class="four wide column">
         <div class="ui inverted link list">
           <div class="item">
             <img th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
@@ -56,17 +56,17 @@
       </div>
 
       <!--推荐博客-->
-      <div class="three wide column" >
+      <div class="four wide column">
         <h4 class="ui inverted header me-opacity-mini" >最新博客</h4>
         <div id="newblog-container">
           <div class="ui inverted link list" th:fragment="newblogList">
-            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}"></a>
           </div>
         </div>
       </div>
 
       <!--联系作者-->
-      <div class="three wide column">
+      <div class="four wide column">
         <h4 class="ui inverted header me-opacity-mini">联系作者</h4>
         <div class="ui inverted list link">
           <p class="item">邮箱: ShaoxiongDu@126.com</p>
@@ -77,20 +77,23 @@
       </div>
       <!--个人说明-->
       <!--个人说明-->
-      <div class="seven wide column">
+      <div class="four wide column">
         <h4 class="ui inverted header me-opacity-mini">Blog</h4>
-        <p class="ui me-opacity-mini">每个人都有属于自己的一片森林</p>
-        <p class="ui me-opacity-mini">也许我们 从来不曾去过，</p>
-        <p class="ui me-opacity-mini">但它一直在那里，总会在那里。</p>
+        <div class="ui inverted list link">
+          <p class="item">每个人都有属于自己的一片森林</p>
+          <p class="item">也许我们 从来不曾去过，</p>
+          <p class="item">但它一直在那里，总会在那里。</p>
+        </div>
       </div>
     </div>
     <div class="ui inverted section divider"></div>
     <!--版权说明-->
-    <p class="me-text-thin me-text-spaced me-opacity-mini">版权所有© 2020-2021 杜少雄 保留所有权利</p>
-    <p class=" me-text-thin me-text-spaced me-opacity-mini">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
+
 
     <!--ICP备案号-->
     <div class="ui inverted list link">
+      <p class="item">Copyright© 2020-2021 杜少雄 All Rights Reserved</p>
+      <p class="item">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
       <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>ICP备案号：晋ICP备2020012997号-1</a>
     </div>
   </div>
