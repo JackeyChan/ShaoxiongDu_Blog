@@ -14,7 +14,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <h2 class="ui teal header item">管理后台</h2>
+      <h2 class="ui teal header item">博客后台管理系统</h2>
       <a href="#" th:href="@{/admin/blogs}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class=" home icon"></i>博客管理</a>
       <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>分类管理</a>
       <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>标签管理</a>
@@ -43,6 +43,11 @@
 <!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
   <div class="ui center aligned container">
+
+    <h3 class="item">网站已运行:<span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h3>
+
+    <br><br><br>
+
     <div class="ui inverted divided stackable grid">
 
       <!--微信二维码-->
@@ -93,7 +98,8 @@
     <div class="ui inverted list link">
       <p class="item">Copyright© 2020-2021 杜少雄 All Rights Reserved</p>
       <p class="item">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
-      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>ICP备案号：晋ICP备2020012997号-1</a>
+      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a>
+
     </div>
   </div>
 
@@ -103,7 +109,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
   <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
 
 </th:block>
 

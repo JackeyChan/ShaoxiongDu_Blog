@@ -4,6 +4,7 @@ import com.lrm.NotFoundException;
 import com.lrm.service.BlogService;
 import com.lrm.service.TagService;
 import com.lrm.service.TypeService;
+import com.lrm.service.WebsiteInfoService;
 import com.lrm.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * Created by limi on 2017/10/13.
@@ -31,13 +34,18 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private WebsiteInfoService websiteInfoService;
+
     @GetMapping("/")
     public String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                        Model model) {
+                        Model model,
+                        HttpSession session) {
         model.addAttribute("page",blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listTypeTop(6));
         model.addAttribute("tags", tagService.listTagTop(10));
         model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
+        session.setAttribute("views",websiteInfoService.addOneForViews());
         return "index";
     }
 

@@ -1,7 +1,9 @@
 package com.lrm.web.admin;
 
 import com.lrm.po.User;
+import com.lrm.po.WebsiteInfo;
 import com.lrm.service.UserService;
+import com.lrm.service.WebsiteInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +21,6 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/admin")
 public class LoginController {
-
 
     @Autowired
     private UserService userService;

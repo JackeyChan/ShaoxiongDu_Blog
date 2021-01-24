@@ -18,7 +18,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <h2 class="ui teal header item">杜少雄的个人博客</h2>
+      <a href="http://www.shaoxiongdu.top" ><h2 class="ui teal header item">杜少雄的个人博客</h2></a>
       <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客首页</a>
       <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>博客分类</a>
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>博客标签</a>
@@ -40,10 +40,14 @@
 </nav>
 
 
-
 <!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
   <div class="ui center aligned container">
+
+    <h3 class="item">总访问量 : <span th:text="${session.views}" class="item m-text-thin"></span>&nbsp;&nbsp;&nbsp;网站已运行:<span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h3>
+
+    <br><br><br>
+
     <div class="ui inverted divided stackable grid">
 
       <!--微信二维码-->
@@ -94,7 +98,8 @@
     <div class="ui inverted list link">
       <p class="item">Copyright© 2020-2021 杜少雄 All Rights Reserved</p>
       <p class="item">通讯地址: 山西省太原市晋源区太原科技大学南校区</p>
-      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>ICP备案号：晋ICP备2020012997号-1</a>
+      <a class="item" target="_blank" href='https://beian.miit.gov.cn/'>晋ICP备2020012997号-1</a>
+
     </div>
   </div>
 
@@ -110,6 +115,49 @@
   <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
   <script>
     $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
+
+    // 运行时间统计
+    function secondToDate(second) {
+      if (!second) {
+        return 0;
+      }
+      var time = new Array(0, 0, 0, 0, 0);
+      if (second >= 365 * 24 * 3600) {
+        time[0] = parseInt(second / (365 * 24 * 3600));
+        second %= 365 * 24 * 3600;
+      }
+      if (second >= 24 * 3600) {
+        time[1] = parseInt(second / (24 * 3600));
+        second %= 24 * 3600;
+      }
+      if (second >= 3600) {
+        time[2] = parseInt(second / 3600);
+        second %= 3600;
+      }
+      if (second >= 60) {
+        time[3] = parseInt(second / 60);
+        second %= 60;
+      }
+      if (second > 0) {
+        time[4] = second;
+      }
+      return time;
+    }
+
+    /*网站建站日期*/
+    function setTime() {
+      /*此处为网站的创建时间*/
+      var create_time = Math.round(new Date(Date.UTC(2020, 12, 10, 15, 15, 15)).getTime() / 1000);
+      var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+      currentTime = secondToDate((timestamp - create_time));
+      currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+              + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+              + '秒';
+      document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+
   </script>
 </th:block>
 
