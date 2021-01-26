@@ -44,7 +44,7 @@
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
   <div class="ui center aligned container">
 
-    <h3 class="item">总访问量 : <span th:text="${session.views}" class="item m-text-thin"></span>&nbsp;&nbsp;&nbsp;网站已运行:<span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h3>
+    <h3 class="item">网站总访问量 : <span th:text="${session.views}" class="item m-text-thin"></span>&nbsp;&nbsp;&nbsp;已持续运行:<span id="htmer_time" class="item m-text-thin"></span> &nbsp;&nbsp;&nbsp; </h3>
 
     <br><br><br>
 
@@ -54,7 +54,7 @@
       <div class="four wide column">
         <div class="ui inverted link list">
           <div class="item">
-            <img th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+            <a href="#"><img th:src="@{/images/wechat.jpg}" title="扫码加我微信"  class="ui rounded image" alt="哎呀 微信二维码不见啦" style="width: 110px"></a>
           </div>
         </div>
       </div>

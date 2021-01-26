@@ -1,3 +1,4 @@
+C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\WebsiteInfoServiceImpl.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\CommentService.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\AboutShowController.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\TypeServiceImpl.java
@@ -5,6 +6,7 @@ C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\TypeSho
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\admin\TypeController.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\admin\BlogController.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\dao\TagRepository.java
+C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\dao\WebsiteInfoRepository.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\po\Blog.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\util\MarkdownUtils.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\admin\LoginController.java
@@ -29,6 +31,8 @@ C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\interceptor
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\util\MyBeanUtils.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\dao\UserRepository.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\po\Type.java
+C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\po\WebsiteInfo.java
+C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\WebsiteInfoService.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\TypeService.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\service\BlogServiceImpl.java
 C:\Users\ShaoxiongDu\OneDrive\Development\blog\src\main\java\com\lrm\web\IndexController.java

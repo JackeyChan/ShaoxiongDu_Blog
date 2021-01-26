@@ -4,31 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="修复主页导航问题以及后台页面的显示问题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/dao/WebsiteInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/po/WebsiteInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/WebsiteInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lrm/service/WebsiteInfoServiceImpl.java" afterDir="false" />
+    <list default="true" id="bc0c4d23-0218-4692-b35a-a928f60eaef9" name="Default" comment="新增网站浏览量统计功能 修复主页logo超链接bug">
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2021-01-24.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/util/MD5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/util/MD5Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lrm/web/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lrm/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lrm/web/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lrm/web/admin/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lrm/web/admin/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lrm/util/MD5Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lrm/util/MD5Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lrm.BlogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.lrm.BlogApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.lrm.BlogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.lrm.BlogApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -307,6 +296,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -361,7 +351,7 @@
       <recent name="com.lrm.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MD5Utils">
+  <component name="RunManager" selected="Deploy to Host.Deploy to Host">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -511,7 +501,7 @@
       <option name="accountModel" />
       <option name="accountModels" />
       <option name="address" />
-      <option name="afterCommand" value="nohup java -jar blog-0.0.1-SNAPSHOT.jar &amp;" />
+      <option name="afterCommand" value="" />
       <option name="alreadyReset" value="true" />
       <option name="autoOpen" value="false" />
       <option name="beforeCommand" value="" />
@@ -535,8 +525,8 @@
         </list>
       </option>
       <option name="hostTagId" value="0" />
-      <option name="location" value="/home/usr/springboot" />
-      <option name="pathOrUrl" value="C:\Users\ShaoxiongDu\Desktop\blog\target\blog-0.0.1-SNAPSHOT.jar" />
+      <option name="location" value="/home/usr/springboot/shaoxiongdu_blog" />
+      <option name="pathOrUrl" value="C:\Users\ShaoxiongDu\OneDrive\Development\blog\target\blog-0.0.1-SNAPSHOT.jar" />
       <option name="tagId" value="0" />
       <option name="terminalCommand" />
       <option name="type" value="HOST" />
@@ -752,7 +742,9 @@
       <workItem from="1611409069475" duration="782000" />
       <workItem from="1611410584037" duration="2206000" />
       <workItem from="1611416242857" duration="1482000" />
-      <workItem from="1611457480737" duration="3930000" />
+      <workItem from="1611457480737" duration="4329000" />
+      <workItem from="1611632685922" duration="3100000" />
+      <workItem from="1611635975578" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="项目部署完成">
       <created>1611319493545</created>
@@ -775,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611416303396</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增网站浏览量统计功能 修复主页logo超链接bug">
+      <created>1611461733033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611461733033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -913,10 +912,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="项目部署完成" />
     <MESSAGE value="修复支付宝打赏功能,完善页面体验" />
     <MESSAGE value="修复主页导航问题以及后台页面的显示问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复主页导航问题以及后台页面的显示问题" />
+    <MESSAGE value="新增网站浏览量统计功能 修复主页logo超链接bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增网站浏览量统计功能 修复主页logo超链接bug" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
