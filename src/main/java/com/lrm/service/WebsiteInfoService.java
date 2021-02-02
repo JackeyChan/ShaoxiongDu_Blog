@@ -8,4 +8,12 @@ public interface WebsiteInfoService {
      */
     public Long addOneForViews();
 
+    /**
+     * 获取关于我页面的图片地址
+     * @return
+     */
+    public String getAboutMeImageUrl();
+
+    public String updateAboutMeImageUrl(String aboutMeImageUrl);
+
 }

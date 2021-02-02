@@ -14,13 +14,29 @@ public class WebsiteInfoServiceImpl implements WebsiteInfoService {
     @Override
     public Long addOneForViews() {
         /*获取当前浏览量*/
-        WebsiteInfo views = websiteInfoRepository.findByViews("views");
+        WebsiteInfo views = websiteInfoRepository.findByValueName("views");
 
         /*递增*/
-        views.setValue(views.getValue()+1);
+        Long view = Long.parseLong(views.getValue());
+        view++;
+        views.setValue(view.toString());
         websiteInfoRepository.save(views);
 
         /*返回*/
-        return views.getValue();
+        return view;
+    }
+
+    @Override
+    public String getAboutMeImageUrl() {
+        WebsiteInfo aboutMeImageUrl = websiteInfoRepository.findByValueName("aboutMeImageUrl");
+        return aboutMeImageUrl.getValue();
+    }
+
+    @Override
+    public String updateAboutMeImageUrl(String aboutMeImageUrl) {
+        WebsiteInfo aboutMeImageUrl1 = websiteInfoRepository.findByValueName("aboutMeImageUrl");
+        aboutMeImageUrl1.setValue(aboutMeImageUrl);
+        websiteInfoRepository.save(aboutMeImageUrl1);
+        return aboutMeImageUrl1.getValue();
     }
 }

@@ -25,6 +25,9 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private WebsiteInfoService websiteInfoService;
+
     @GetMapping
     public String loginPage() {
         return "admin/login";
@@ -40,6 +43,7 @@ public class LoginController {
         if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
+            session.setAttribute("aboutMeImageUrl",websiteInfoService.getAboutMeImageUrl());
             return "admin/index";
         } else {
             attributes.addFlashAttribute("message", "用户名和密码错误");

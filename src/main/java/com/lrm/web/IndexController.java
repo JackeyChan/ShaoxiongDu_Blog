@@ -46,6 +46,7 @@ public class IndexController {
         model.addAttribute("tags", tagService.listTagTop(10));
         model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
         session.setAttribute("views",websiteInfoService.addOneForViews());
+        session.setAttribute("aboutMeImageUrl",websiteInfoService.getAboutMeImageUrl());
         return "index";
     }
 

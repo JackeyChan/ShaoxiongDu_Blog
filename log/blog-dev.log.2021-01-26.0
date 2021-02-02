@@ -1,0 +1,698 @@
+2021-01-26 11:45:34.097  INFO 4240 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on DESKTOP-BP3F4BO with PID 4240 (C:\Users\ShaoxiongDu\OneDrive\Development\blog\target\classes started by ShaoxiongDu in C:\Users\ShaoxiongDu\OneDrive\Development\blog)
+2021-01-26 11:45:34.110 DEBUG 4240 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-01-26 11:45:34.110  INFO 4240 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-01-26 11:45:34.315  INFO 4240 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19d1d374: startup date [Tue Jan 26 11:45:34 CST 2021]; root of context hierarchy
+2021-01-26 11:45:36.286  INFO 4240 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2021-01-26 11:45:36.293  INFO 4240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:45:36.293  INFO 4240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-01-26 11:45:36.381  INFO 4240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:45:36.381  INFO 4240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2066 ms
+2021-01-26 11:45:36.532  INFO 4240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-26 11:45:36.532  INFO 4240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-26 11:45:36.532  INFO 4240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-26 11:45:36.532  INFO 4240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-26 11:45:36.532  INFO 4240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-26 11:45:41.489  INFO 4240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-26 11:45:41.500  INFO 4240 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-26 11:45:41.566  INFO 4240 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-26 11:45:41.567  INFO 4240 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-01-26 11:45:41.568  INFO 4240 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-01-26 11:45:41.600  INFO 4240 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-26 11:45:41.866  INFO 4240 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-01-26 11:45:42.278  INFO 4240 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-01-26 11:45:50.781  INFO 4240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 11:45:51.047  INFO 4240 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-01-26 11:45:51.761  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19d1d374: startup date [Tue Jan 26 11:45:34 CST 2021]; root of context hierarchy
+2021-01-26 11:45:51.813  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-26 11:45:51.829  INFO 4240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-26 11:45:51.891  INFO 4240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:45:51.891  INFO 4240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:45:51.907  INFO 4240 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-01-26 11:45:51.923  INFO 4240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:45:52.599  INFO 4240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 11:45:52.711  INFO 4240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-26 11:45:52.755  INFO 4240 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2021-01-26 11:45:52.759  INFO 4240 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 19.089 seconds (JVM running for 21.192)
+2021-01-26 11:46:29.440  INFO 4240 --- [Thread-46] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19d1d374: startup date [Tue Jan 26 11:45:34 CST 2021]; root of context hierarchy
+2021-01-26 11:46:29.443  INFO 4240 --- [Thread-46] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-01-26 11:46:29.445  INFO 4240 --- [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 11:46:33.656  INFO 11596 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on DESKTOP-BP3F4BO with PID 11596 (C:\Users\ShaoxiongDu\OneDrive\Development\blog\target\classes started by ShaoxiongDu in C:\Users\ShaoxiongDu\OneDrive\Development\blog)
+2021-01-26 11:46:33.672 DEBUG 11596 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-01-26 11:46:33.672  INFO 11596 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-01-26 11:46:33.891  INFO 11596 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10170c89: startup date [Tue Jan 26 11:46:33 CST 2021]; root of context hierarchy
+2021-01-26 11:46:35.548  INFO 11596 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2021-01-26 11:46:35.564  INFO 11596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 11:46:35.564  INFO 11596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-01-26 11:46:35.643  INFO 11596 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 11:46:35.643  INFO 11596 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1752 ms
+2021-01-26 11:46:35.799  INFO 11596 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-26 11:46:35.815  INFO 11596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-26 11:46:35.815  INFO 11596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-26 11:46:35.815  INFO 11596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-26 11:46:35.815  INFO 11596 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-26 11:46:40.835  INFO 11596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-26 11:46:40.835  INFO 11596 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-26 11:46:40.898  INFO 11596 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-26 11:46:40.898  INFO 11596 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-01-26 11:46:40.898  INFO 11596 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-01-26 11:46:40.960  INFO 11596 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-26 11:46:41.132  INFO 11596 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-01-26 11:46:41.515  INFO 11596 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-01-26 11:46:50.985  INFO 11596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 11:46:51.243  INFO 11596 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-01-26 11:46:51.956  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10170c89: startup date [Tue Jan 26 11:46:33 CST 2021]; root of context hierarchy
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.018  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2021-01-26 11:46:52.034  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.034  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 11:46:52.034  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-26 11:46:52.034  INFO 11596 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-26 11:46:52.080  INFO 11596 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:46:52.080  INFO 11596 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:46:52.100  INFO 11596 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-01-26 11:46:52.123  INFO 11596 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 11:46:52.759  INFO 11596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 11:46:52.862  INFO 11596 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-26 11:46:52.909  INFO 11596 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2021-01-26 11:46:52.909  INFO 11596 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 19.735 seconds (JVM running for 20.682)
+2021-01-26 11:46:56.790  INFO 11596 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-01-26 11:46:56.790  INFO 11596 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-26 11:46:56.817  INFO 11596 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2021-01-26 11:46:56.849  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@1275acae]}
+2021-01-26 11:46:57.768  WARN 11596 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-01-26 11:46:57.832  WARN 11596 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-01-26 11:46:58.379  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2021-01-26 11:47:00.060  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:47:00.492  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:47:04.794  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@1275acae]}
+2021-01-26 11:47:05.862  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : index
+2021-01-26 11:47:06.749  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:47:06.993  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:47:11.826  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@651a268f]}
+2021-01-26 11:47:12.902  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : index
+2021-01-26 11:47:13.859  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:47:14.109  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:47:20.032  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:47:20.035  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:47:20.048 ERROR 11596 --- [http-nio-80-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-4] Exception processing template "about": An error happened during template parsing (template: "class path resource [templates/about.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/about.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:667)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1087)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1061)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "https://api.qinor.cn/img" (template: "about" - line 44, col 18)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "https://api.qinor.cn/img" (template: "about" - line 44, col 18)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:67)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlVoidElement.handleOpenElementEnd(HtmlVoidElement.java:92)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+
+2021-01-26 11:47:20.050 ERROR 11596 --- [http-nio-80-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/about.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "https://api.qinor.cn/img" (template: "about" - line 44, col 18)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:67)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
+	at org.attoparser.HtmlVoidElement.handleOpenElementEnd(HtmlVoidElement.java:92)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:667)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1087)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1061)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-01-26 11:47:32.238  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:47:32.239  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:47:32.623  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:47:32.920  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:47:38.175  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:47:38.175  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:47:38.486  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:47:38.779  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:48:12.154  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:48:12.154  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:48:12.496  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:48:12.789  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:48:14.711  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:48:14.711  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:48:15.033  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:48:15.279  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:48:16.902  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:48:16.903  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:48:17.217  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:48:17.511  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:48:35.017  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:48:35.017  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:48:35.364  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:48:35.657  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:48:37.216  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:48:37.216  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:48:37.532  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:48:37.778  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:49:02.736  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:49:02.736  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:49:03.072  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:49:03.366  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:49:07.145  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:49:07.146  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:49:07.452  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:49:07.750  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:49:30.545  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:49:30.545  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:49:31.069  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:49:31.363  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:49:34.393  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:49:34.393  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:49:34.858  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:49:35.153  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:50:11.925  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:50:11.926  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:50:12.338  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:50:12.635  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:51:25.243  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:51:25.243  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:51:25.679  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:51:25.972  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:51:29.361  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:51:29.362  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:51:29.678  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:51:29.974  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:51:33.633  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:51:33.634  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:51:33.945  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:51:34.239  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:52:04.008  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:52:04.008  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:52:04.491  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:52:04.785  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:52:18.978  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:52:18.979  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:52:19.567  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:52:19.862  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:52:30.217  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:52:30.218  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:52:30.584  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:52:30.877  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:52:59.640  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:52:59.641  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:52:59.984  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:53:00.277  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:53:15.456  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:53:15.456  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:53:15.954  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:53:16.248  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:53:37.759  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:53:37.760  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:53:38.405  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:53:38.700  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:03.008  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:03.009  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:03.358  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:03.651  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:15.048  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:15.048  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:15.536  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:15.828  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:18.869  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:18.869  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:19.171  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:19.463  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:26.120  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:26.120  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:26.582  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:26.876  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:31.201  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:31.202  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:31.528  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:31.821  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:38.795  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:38.795  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:39.197  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:39.495  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:56.193  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:56.194  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:56.749  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:57.042  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:54:59.160  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:54:59.160  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:54:59.634  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:54:59.899  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:16.135  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:16.135  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:16.591  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:16.885  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:44.938  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:44.938  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:45.394  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:45.685  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:47.792  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:47.792  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:48.107  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:48.354  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:49.758  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:49.759  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:50.081  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:50.373  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:51.919  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:51.920  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:52.237  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:52.480  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:58.390  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:58.390  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:55:58.787  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:55:59.081  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:55:59.855  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:55:59.856  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:00.157  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:00.401  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:02.075  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:02.075  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:02.385  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:02.678  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:03.904  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:03.905  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:04.353  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:04.597  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:07.471  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:07.471  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:07.775  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:08.068  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:23.704  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:23.705  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:24.060  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:24.353  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:25.995  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:25.996  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:26.502  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:26.747  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:56:27.727  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:56:27.728  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:56:28.038  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:56:28.331  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:03.993  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:03.993  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:04.440  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:04.865  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:11.221  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:11.221  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:11.535  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:11.826  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:13.862  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:13.863  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:14.176  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:14.421  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:27.288  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:27.288  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:27.736  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:28.029  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:28.843  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:28.843  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:29.152  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:29.396  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:30.278  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:30.278  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:30.580  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:30.826  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:31.720  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:31.721  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:32.037  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:32.328  INFO 11596 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:33.591  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:33.591  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:33.910  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:34.154  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:37.688  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:37.689  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:37.982  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:38.276  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:57:39.077  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:57:39.078  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:57:39.376  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:57:39.619  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:58:04.424  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:58:04.424  INFO 11596 --- [http-nio-80-exec-9] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:58:04.805  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:58:05.096  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:58:08.640  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:58:08.640  INFO 11596 --- [http-nio-80-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:58:09.073  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:58:09.364  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:59:06.894  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:59:06.894  INFO 11596 --- [http-nio-80-exec-8] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:59:07.293  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:59:07.584  INFO 11596 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:59:11.357  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:59:11.358  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:59:11.664  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:59:11.955  INFO 11596 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:59:38.679  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/about;jsessionid=7574463DAC51C249BF82DCB5ADC595C8', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-01-26 11:59:38.679  INFO 11596 --- [http-nio-80-exec-4] com.lrm.aspect.LogAspect                 : Result : about
+2021-01-26 11:59:39.223  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:59:39.514  INFO 11596 --- [http-nio-80-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 11:59:53.869  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@651a268f]}
+2021-01-26 11:59:54.944  INFO 11596 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2021-01-26 11:59:55.862  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 11:59:56.109  INFO 11596 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 12:00:24.098  INFO 11596 --- [Thread-47] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10170c89: startup date [Tue Jan 26 11:46:33 CST 2021]; root of context hierarchy
+2021-01-26 12:00:24.100  INFO 11596 --- [Thread-47] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-01-26 12:00:24.101  INFO 11596 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:01:26.889  INFO 3048 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on DESKTOP-BP3F4BO with PID 3048 (C:\Users\ShaoxiongDu\OneDrive\Development\blog\target\classes started by ShaoxiongDu in C:\Users\ShaoxiongDu\OneDrive\Development\blog)
+2021-01-26 12:01:26.890 DEBUG 3048 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-01-26 12:01:26.891  INFO 3048 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-01-26 12:01:27.119  INFO 3048 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6089d763: startup date [Tue Jan 26 12:01:27 CST 2021]; root of context hierarchy
+2021-01-26 12:01:29.079  INFO 3048 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2021-01-26 12:01:29.088  INFO 3048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-26 12:01:29.089  INFO 3048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-01-26 12:01:29.177  INFO 3048 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-26 12:01:29.177  INFO 3048 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2058 ms
+2021-01-26 12:01:29.334  INFO 3048 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-26 12:01:29.340  INFO 3048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-26 12:01:29.341  INFO 3048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-26 12:01:29.341  INFO 3048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-26 12:01:29.341  INFO 3048 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-26 12:01:34.398  INFO 3048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:01:34.406  INFO 3048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-26 12:01:34.456  INFO 3048 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-26 12:01:34.457  INFO 3048 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-01-26 12:01:34.458  INFO 3048 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-01-26 12:01:34.491  INFO 3048 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-26 12:01:34.637  INFO 3048 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-01-26 12:01:34.999  INFO 3048 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-01-26 12:01:42.538  INFO 3048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:01:42.796  INFO 3048 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-01-26 12:01:43.689  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6089d763: startup date [Tue Jan 26 12:01:27 CST 2021]; root of context hierarchy
+2021-01-26 12:01:43.963  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2021-01-26 12:01:43.969  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.970  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 12:01:43.971  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2021-01-26 12:01:43.972  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2021-01-26 12:01:43.972  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.973  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 12:01:43.977  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2021-01-26 12:01:43.977  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.978  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-01-26 12:01:43.981  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.983  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2021-01-26 12:01:43.983  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.984  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 12:01:43.984  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.985  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.988  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.988  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2021-01-26 12:01:43.989  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.989  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 12:01:43.989  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.990  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:01:43.993  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2021-01-26 12:01:43.994  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2021-01-26 12:01:43.994  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.996  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2021-01-26 12:01:43.996  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2021-01-26 12:01:43.996  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.996  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2021-01-26 12:01:43.997  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:43.998  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:01:44.001  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-26 12:01:44.002  INFO 3048 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-26 12:01:44.062  INFO 3048 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:01:44.063  INFO 3048 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:01:44.084  INFO 3048 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-01-26 12:01:44.127  INFO 3048 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:01:44.821  INFO 3048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-26 12:01:44.937  INFO 3048 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-26 12:01:44.978  INFO 3048 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2021-01-26 12:01:44.982  INFO 3048 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 18.51 seconds (JVM running for 19.405)
+2021-01-26 12:01:45.745  INFO 3048 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-01-26 12:01:45.745  INFO 3048 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-26 12:01:45.770  INFO 3048 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2021-01-26 12:01:45.797  INFO 3048 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}, org.apache.catalina.session.StandardSessionFacade@5a47937c]}
+2021-01-26 12:01:46.368  WARN 3048 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-01-26 12:01:46.417  WARN 3048 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-01-26 12:01:46.764  INFO 3048 --- [http-nio-80-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2021-01-26 12:01:47.943  INFO 3048 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 12:01:48.140  INFO 3048 --- [http-nio-80-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 12:02:33.250  INFO 3048 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/blog/5', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.blog', args=[5, {}]}
+2021-01-26 12:02:33.539  INFO 3048 --- [http-nio-80-exec-7] com.lrm.aspect.LogAspect                 : Result : blog
+2021-01-26 12:02:33.915  INFO 3048 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-01-26 12:02:34.112  INFO 3048 --- [http-nio-80-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-01-26 12:02:34.134  INFO 3048 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost/comments/5', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.CommentController.comments', args=[5, {}]}
+2021-01-26 12:02:34.309  INFO 3048 --- [http-nio-80-exec-3] com.lrm.aspect.LogAspect                 : Result : blog :: commentList
+2021-01-26 12:03:01.321  INFO 3048 --- [Thread-43] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6089d763: startup date [Tue Jan 26 12:01:27 CST 2021]; root of context hierarchy
+2021-01-26 12:03:01.324  INFO 3048 --- [Thread-43] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-01-26 12:03:01.324  INFO 3048 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:20:25.284  INFO 2360 --- [main] com.lrm.BlogApplicationTests             : Starting BlogApplicationTests on DESKTOP-BP3F4BO with PID 2360 (started by ShaoxiongDu in C:\Users\ShaoxiongDu\OneDrive\Development\blog)
+2021-01-26 12:20:25.285 DEBUG 2360 --- [main] com.lrm.BlogApplicationTests             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-01-26 12:20:25.286  INFO 2360 --- [main] com.lrm.BlogApplicationTests             : The following profiles are active: dev
+2021-01-26 12:20:25.441  INFO 2360 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Tue Jan 26 12:20:25 CST 2021]; root of context hierarchy
+2021-01-26 12:20:31.747  INFO 2360 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:20:31.801  INFO 2360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-26 12:20:31.859  INFO 2360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-26 12:20:31.860  INFO 2360 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-01-26 12:20:31.861  INFO 2360 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-01-26 12:20:31.894  INFO 2360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-26 12:20:31.993  INFO 2360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-01-26 12:20:32.561  INFO 2360 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-01-26 12:20:41.205  INFO 2360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-26 12:20:41.569  INFO 2360 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-01-26 12:20:42.679  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Tue Jan 26 12:20:25 CST 2021]; root of context hierarchy
+2021-01-26 12:20:42.753  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2021-01-26 12:20:42.756  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.757  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 12:20:42.757  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2021-01-26 12:20:42.758  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2021-01-26 12:20:42.758  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.759  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-01-26 12:20:42.760  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-01-26 12:20:42.760  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.761  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2021-01-26 12:20:42.763  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.763  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2021-01-26 12:20:42.763  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 12:20:42.764  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.764  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.764  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.766  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.767  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2021-01-26 12:20:42.767  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-01-26 12:20:42.767  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.767  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-01-26 12:20:42.768  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.770  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2021-01-26 12:20:42.771  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2021-01-26 12:20:42.771  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.772  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model,javax.servlet.http.HttpSession)
+2021-01-26 12:20:42.772  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2021-01-26 12:20:42.773  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2021-01-26 12:20:42.773  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.773  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.774  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-01-26 12:20:42.775  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-26 12:20:42.775  INFO 2360 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-26 12:20:42.817  INFO 2360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:20:42.817  INFO 2360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:20:42.833  INFO 2360 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-01-26 12:20:42.857  INFO 2360 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-26 12:20:43.502  INFO 2360 --- [main] com.lrm.BlogApplicationTests             : Started BlogApplicationTests in 18.649 seconds (JVM running for 19.279)
+2021-01-26 12:20:43.554  INFO 2360 --- [Thread-4] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@72d6b3ba: startup date [Tue Jan 26 12:20:25 CST 2021]; root of context hierarchy
+2021-01-26 12:20:43.559  INFO 2360 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

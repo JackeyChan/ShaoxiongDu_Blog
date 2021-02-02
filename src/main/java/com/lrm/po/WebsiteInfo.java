@@ -7,14 +7,17 @@ import javax.persistence.*;
 @Table(name = "t_website_info")
 public class WebsiteInfo {
 
+    /**
+     * 网站各值名称
+     */
     @Id
-    private String views;
+    private String valueName;
 
 
     /**
-     * 网站总浏览量
+     * 网站各值
      */
-    private Long value;
+    private String value;
 
     public WebsiteInfo() {
     }
@@ -23,24 +26,24 @@ public class WebsiteInfo {
     @Override
     public String toString() {
         return "WebsiteInfo{" +
-                "views='" + views + '\'' +
+                "valueName='" + valueName + '\'' +
                 ", value=" + value +
                 '}';
     }
 
-    public String getViews() {
-        return views;
+    public String getValueName() {
+        return valueName;
     }
 
-    public void setViews(String views) {
-        this.views = views;
+    public void setValueName(String valueName) {
+        this.valueName = valueName;
     }
 
-    public Long getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Long value) {
+    public void setValue(String value) {
         this.value = value;
     }
 }

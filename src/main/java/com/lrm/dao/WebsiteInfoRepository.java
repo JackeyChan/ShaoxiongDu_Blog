@@ -15,8 +15,8 @@ import java.util.List;
 /**
  * Created by limi on 2017/10/20.
  */
-public interface WebsiteInfoRepository extends JpaRepository<WebsiteInfo, Long>{
+public interface WebsiteInfoRepository extends JpaRepository<WebsiteInfo, String>{
 
-    public WebsiteInfo findByViews(String views);
+    public WebsiteInfo findByValueName(String valueName);
 
 }
