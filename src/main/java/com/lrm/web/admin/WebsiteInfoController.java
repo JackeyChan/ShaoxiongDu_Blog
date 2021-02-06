@@ -27,8 +27,15 @@ public class WebsiteInfoController {
     @PostMapping("/admin/updateAboutMeImageUrl")
     public String updateAboutMeImageUrl(String aboutMeImageUrl,HttpSession session){
         String s = websiteInfoService.updateAboutMeImageUrl(aboutMeImageUrl);
-        session.setAttribute("aboutMeImageUrl",aboutMeImageUrl);
+        session.setAttribute("aboutMeImageUrl",s);
         return "/admin/websiteInfo";
     }
 
+
+    @PostMapping("/admin/updateTopTitle")
+    public String updateTopTitle(String topTitle,HttpSession session){
+        String s = websiteInfoService.updateTopTitle(topTitle);
+        session.setAttribute("topTitle",s);
+        return "/admin/websiteInfo";
+    }
 }

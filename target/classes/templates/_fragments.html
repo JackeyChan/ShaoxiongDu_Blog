@@ -18,7 +18,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <a href="http://www.shaoxiongdu.top" ><h2 class="ui teal header item">杜少雄的个人博客</h2></a>
+      <a href="http://www.shaoxiongdu.top" ><h2 class="ui teal header item" th:text="${session.topTitle}">杜少雄的个人博客</h2></a>
       <a href="#" th:href="@{/}" class="m-item item m-mobile-hide " th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博客首页</a>
       <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class=" list icon"></i>博客分类</a>
       <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class=" tags icon"></i>博客标签</a>

@@ -48,9 +48,13 @@
           <div class="ui top attached segment">
             <div class="center aligned ui header">关于作者</div>
             <div class="attached segment center aligned ui me-text">
-              <p>杜少雄</p>
-              <p>一个大三的计科狗</p>
-              <p>折腾在 0 和 1 世界的小伙子</p>
+              <div>
+
+              </div>
+              <p th:utext="${session.aboutMeContent}">
+                  我是替换内容
+              </p>
+
             </div>
             <!--个人标签-->
             <div class="attached segment ui aligned">

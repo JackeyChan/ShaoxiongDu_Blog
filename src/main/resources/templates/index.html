@@ -45,7 +45,7 @@
           <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
               <div class="column">
-                <h3 class="ui teal header">博客</h3>
+                <h3 class="ui teal header"><i class="list ol icon"></i>博客列表</h3>
               </div>
               <div class="right aligned column">
                 共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}"></h2> 篇
@@ -115,7 +115,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <h3><i class="list icon"></i>分类</h3>
+                  <h3><i class="bars icon"></i>博客分类</h3>
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{types/-1}" target="_blank"><h4>更多<i class="angle double right icon"></i></h4></a>
@@ -138,7 +138,7 @@
             <div class="ui secondary segment">
               <div class="ui two column grid">
                 <div class="column">
-                  <h3><i class="tags icon"></i>标签</h3>
+                  <h3><i class="tags icon"></i>博客标签</h3>
                 </div>
                 <div class="right aligned column">
                   <a href="#" th:href="@{tags/-1}" target="_blank"><h4>更多<i class="angle double right icon"></i></h4></a>

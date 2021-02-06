@@ -50,6 +50,16 @@
             </div>
           </div>
         </form>
+        <br>
+        <form th:action="@{/admin/updateTopTitle}" method="post">
+          <div class="required field">
+            <div class="ui left labeled input">
+              <label class="ui teal basic label">主页顶部标题</label>
+              <input type="text" name="topTitle" th:value="${session.topTitle}">
+              <button class="ui button label teal basis" type="submit">提交</button>
+            </div>
+          </div>
+        </form>
 
       </div>
 

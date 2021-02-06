@@ -39,4 +39,23 @@ public class WebsiteInfoServiceImpl implements WebsiteInfoService {
         websiteInfoRepository.save(aboutMeImageUrl1);
         return aboutMeImageUrl1.getValue();
     }
+
+    @Override
+    public String getTopTitle() {
+        WebsiteInfo topTitle = websiteInfoRepository.findByValueName("topTitle");
+        return topTitle.getValue();
+    }
+
+    @Override
+    public String updateTopTitle(String topTitle) {
+        WebsiteInfo topTitle1 = websiteInfoRepository.findByValueName("topTitle");
+        topTitle1.setValue(topTitle);
+        websiteInfoRepository.save(topTitle1);
+        return topTitle1.getValue();
+    }
+
+    @Override
+    public String getAboutMeContent() {
+        return websiteInfoRepository.findByValueName("aboutMeContent").getValue();
+    }
 }
